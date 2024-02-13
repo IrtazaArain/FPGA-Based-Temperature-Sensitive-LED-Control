@@ -1,0 +1,77 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Feb 13 19:36:41 2024
+| Host         : DESKTOP-BTHLV1B running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     9 |
+| Unused register locations in slices containing registers |    24 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      6 |            1 |
+|      8 |            1 |
+|     10 |            1 |
+|     14 |            2 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             138 |           27 |
+| No           | No                    | Yes                    |              34 |            4 |
+| No           | Yes                   | No                     |              28 |            6 |
+| Yes          | No                    | No                     |              38 |            4 |
+| Yes          | No                    | Yes                    |              10 |            2 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------+--------------------------------------------+-----------------------+------------------+----------------+
+|           Clock Signal           |                Enable Signal               |    Set/Reset Signal   | Slice Load Count | Bel Load Count |
++----------------------------------+--------------------------------------------+-----------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG             | tri_instance/R_i_1_n_0                     |                       |                1 |              6 |
+|  seg_instance/seg_reg[3]_i_2_n_0 |                                            |                       |                2 |              8 |
+|  w_200kHz_BUFG                   | master/FSM_sequential_state_reg[4]_i_1_n_0 | reset_IBUF            |                2 |             10 |
+|  CLK100MHZ_IBUF_BUFG             |                                            | cgen/clk_reg          |                2 |             14 |
+|  CLK100MHZ_IBUF_BUFG             |                                            | tri_instance/p1/clear |                4 |             14 |
+|  w_200kHz_BUFG                   | master/temp_data_reg                       |                       |                3 |             32 |
+|  w_200kHz_BUFG                   |                                            |                       |                9 |             34 |
+|  w_200kHz_BUFG                   |                                            | reset_IBUF            |                4 |             34 |
+|  CLK100MHZ_IBUF_BUFG             |                                            |                       |               16 |             96 |
++----------------------------------+--------------------------------------------+-----------------------+------------------+----------------+
+
+

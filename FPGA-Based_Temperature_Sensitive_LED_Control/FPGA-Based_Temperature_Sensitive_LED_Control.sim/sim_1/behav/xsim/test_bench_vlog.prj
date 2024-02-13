@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/clkgen_200kHz.v" \
+"../../../../FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/i2c_master.v" \
+"../../../../FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/pwm.v" \
+"../../../../FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/seg_Dsplay.v" \
+"../../../../FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/top.v" \
+"../../../../FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/tri_color.v" \
+"../../../../FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sim_1/new/test_bench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

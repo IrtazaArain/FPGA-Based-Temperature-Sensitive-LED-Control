@@ -1,0 +1,557 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3304 
+WARNING: [Synth 8-2611] redeclaration of ansi port pwm_count is not allowed [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/pwm.v:27]
+WARNING: [Synth 8-976] pwm_count has already been declared [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/pwm.v:27]
+WARNING: [Synth 8-2654] second declaration of pwm_count ignored [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/pwm.v:27]
+INFO: [Synth 8-994] pwm_count is declared here [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/pwm.v:25]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 420.969 ; gain = 109.051
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'i2c_master' [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/i2c_master.v:23]
+	Parameter sensor_address_plus_read bound to: 8'b10010111 
+	Parameter POWER_UP bound to: 5'b00000 
+	Parameter START bound to: 5'b00001 
+	Parameter SEND_ADDR6 bound to: 5'b00010 
+	Parameter SEND_ADDR5 bound to: 5'b00011 
+	Parameter SEND_ADDR4 bound to: 5'b00100 
+	Parameter SEND_ADDR3 bound to: 5'b00101 
+	Parameter SEND_ADDR2 bound to: 5'b00110 
+	Parameter SEND_ADDR1 bound to: 5'b00111 
+	Parameter SEND_ADDR0 bound to: 5'b01000 
+	Parameter SEND_RW bound to: 5'b01001 
+	Parameter REC_ACK bound to: 5'b01010 
+	Parameter REC_MSB7 bound to: 5'b01011 
+	Parameter REC_MSB6 bound to: 5'b01100 
+	Parameter REC_MSB5 bound to: 5'b01101 
+	Parameter REC_MSB4 bound to: 5'b01110 
+	Parameter REC_MSB3 bound to: 5'b01111 
+	Parameter REC_MSB2 bound to: 5'b10000 
+	Parameter REC_MSB1 bound to: 5'b10001 
+	Parameter REC_MSB0 bound to: 5'b10010 
+	Parameter SEND_ACK bound to: 5'b10011 
+	Parameter REC_LSB7 bound to: 5'b10100 
+	Parameter REC_LSB6 bound to: 5'b10101 
+	Parameter REC_LSB5 bound to: 5'b10110 
+	Parameter REC_LSB4 bound to: 5'b10111 
+	Parameter REC_LSB3 bound to: 5'b11000 
+	Parameter REC_LSB2 bound to: 5'b11001 
+	Parameter REC_LSB1 bound to: 5'b11010 
+	Parameter REC_LSB0 bound to: 5'b11011 
+	Parameter NACK bound to: 5'b11100 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/i2c_master.v:102]
+WARNING: [Synth 8-5788] Register counter_reg in module i2c_master is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/i2c_master.v:39]
+WARNING: [Synth 8-5788] Register clk_reg_reg in module i2c_master is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/i2c_master.v:40]
+WARNING: [Synth 8-5788] Register o_bit_reg in module i2c_master is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/i2c_master.v:109]
+WARNING: [Synth 8-5788] Register tMSB_reg in module i2c_master is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/i2c_master.v:158]
+WARNING: [Synth 8-5788] Register tLSB_reg in module i2c_master is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/i2c_master.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_master' (1#1) [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/i2c_master.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clkgen_200kHz' [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/clkgen_200kHz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clkgen_200kHz' (2#1) [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/clkgen_200kHz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seg_Dsplay' [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/seg_Dsplay.v:23]
+INFO: [Synth 8-226] default block is never used [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/seg_Dsplay.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'seg_Dsplay' (3#1) [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/seg_Dsplay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tri_color' [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/tri_color.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwm' [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/pwm.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwm' (4#1) [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/pwm.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'tri_color' (5#1) [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/tri_color.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (6#1) [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design tri_color has unconnected port temp_data[2]
+WARNING: [Synth 8-3331] design tri_color has unconnected port temp_data[1]
+WARNING: [Synth 8-3331] design tri_color has unconnected port temp_data[0]
+WARNING: [Synth 8-3331] design seg_Dsplay has unconnected port temp_data[2]
+WARNING: [Synth 8-3331] design seg_Dsplay has unconnected port temp_data[1]
+WARNING: [Synth 8-3331] design seg_Dsplay has unconnected port temp_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 457.504 ; gain = 145.586
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 457.504 ; gain = 145.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 457.504 ; gain = 145.586
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 820.199 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 820.199 ; gain = 508.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 820.199 ; gain = 508.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 820.199 ; gain = 508.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'i2c_master'
+INFO: [Synth 8-5544] ROM "counter" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clk_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "o_bit" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tLSB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tMSB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp_data_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_reg" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                POWER_UP |                            00000 |                            00000
+                   START |                            00001 |                            00001
+              SEND_ADDR6 |                            01101 |                            00010
+              SEND_ADDR5 |                            01010 |                            00011
+              SEND_ADDR4 |                            01011 |                            00100
+              SEND_ADDR3 |                            11100 |                            00101
+              SEND_ADDR2 |                            11010 |                            00110
+              SEND_ADDR1 |                            10111 |                            00111
+              SEND_ADDR0 |                            11000 |                            01000
+                 SEND_RW |                            11011 |                            01001
+                 REC_ACK |                            10110 |                            01010
+                REC_MSB7 |                            10100 |                            01011
+                REC_MSB6 |                            00110 |                            01100
+                REC_MSB5 |                            00101 |                            01101
+                REC_MSB4 |                            00010 |                            01110
+                REC_MSB3 |                            00011 |                            01111
+                REC_MSB2 |                            01111 |                            10000
+                REC_MSB1 |                            01100 |                            10001
+                REC_MSB0 |                            01001 |                            10010
+                SEND_ACK |                            00111 |                            10011
+                REC_LSB7 |                            01000 |                            10100
+                REC_LSB6 |                            11001 |                            10101
+                REC_LSB5 |                            10011 |                            10110
+                REC_LSB4 |                            10001 |                            10111
+                REC_LSB3 |                            10010 |                            11000
+                REC_LSB2 |                            10101 |                            11001
+                REC_LSB1 |                            10000 |                            11010
+                REC_LSB0 |                            01110 |                            11011
+                    NACK |                            00100 |                            11100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'i2c_master'
+WARNING: [Synth 8-327] inferring latch for variable 'seg_reg' [D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.srcs/sources_1/new/seg_Dsplay.v:173]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 820.199 ; gain = 508.281
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	  29 Input     12 Bit        Muxes := 1     
+	  29 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 1     
+	  29 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 72    
+	  29 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module i2c_master 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	  29 Input     12 Bit        Muxes := 1     
+	  29 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 2     
+	  29 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 36    
+	  29 Input      1 Bit        Muxes := 3     
+Module clkgen_200kHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module seg_Dsplay 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+Module pwm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+Module tri_color 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 35    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "o_bit" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cgen/clk_reg" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design tri_color has unconnected port temp_data[2]
+WARNING: [Synth 8-3331] design tri_color has unconnected port temp_data[1]
+WARNING: [Synth 8-3331] design tri_color has unconnected port temp_data[0]
+WARNING: [Synth 8-3331] design seg_Dsplay has unconnected port temp_data[2]
+WARNING: [Synth 8-3331] design seg_Dsplay has unconnected port temp_data[1]
+WARNING: [Synth 8-3331] design seg_Dsplay has unconnected port temp_data[0]
+INFO: [Synth 8-3886] merging instance 'tri_instance/temperature_reg[8]' (FD) to 'tri_instance/temperature_reg[9]'
+INFO: [Synth 8-3886] merging instance 'tri_instance/temperature_reg[9]' (FD) to 'tri_instance/temperature_reg[10]'
+INFO: [Synth 8-3886] merging instance 'tri_instance/temperature_reg[10]' (FD) to 'tri_instance/temperature_reg[11]'
+INFO: [Synth 8-3886] merging instance 'tri_instance/temperature_reg[11]' (FD) to 'tri_instance/temperature_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seg_instance/seg_reg[4] )
+WARNING: [Synth 8-3332] Sequential element (seg_instance/seg_reg[4]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 820.199 ; gain = 508.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|seg_Dsplay  | SEG        | 32x7          | LUT            | 
+|seg_Dsplay  | SEG        | 32x7          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 820.199 ; gain = 508.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 841.211 ; gain = 529.293
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 844.191 ; gain = 532.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 844.191 ; gain = 532.273
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 844.191 ; gain = 532.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 844.191 ; gain = 532.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 844.191 ; gain = 532.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 844.191 ; gain = 532.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 844.191 ; gain = 532.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    44|
+|3     |LUT1   |    71|
+|4     |LUT2   |   139|
+|5     |LUT3   |    46|
+|6     |LUT4   |    21|
+|7     |LUT5   |    27|
+|8     |LUT6   |   102|
+|9     |FDCE   |    15|
+|10    |FDPE   |     7|
+|11    |FDRE   |    98|
+|12    |LD     |     4|
+|13    |IBUF   |    16|
+|14    |IOBUF  |     1|
+|15    |OBUF   |    36|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+--------------+------+
+|      |Instance       |Module        |Cells |
++------+---------------+--------------+------+
+|1     |top            |              |   629|
+|2     |  cgen         |clkgen_200kHz |    21|
+|3     |  master       |i2c_master    |   186|
+|4     |  seg_instance |seg_Dsplay    |    94|
+|5     |  tri_instance |tri_color     |   241|
+|6     |    p1         |pwm           |    23|
++------+---------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 844.191 ; gain = 532.273
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 844.191 ; gain = 169.578
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 844.191 ; gain = 532.273
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  LD => LDCE: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+102 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:48 . Memory (MB): peak = 844.191 ; gain = 545.152
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/7th Semester/Digital System Design CS-431/Labs/CEP/FPGA-Based_Temperature_Sensitive_LED_Control/FPGA-Based_Temperature_Sensitive_LED_Control.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 844.191 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 13 19:32:39 2024...
